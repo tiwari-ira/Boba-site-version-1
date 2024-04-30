@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background:#D2B48C;
+  background-position: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.bubble {
+  position: absolute;
+  top: 100vh;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+   background-image: url('https://cdn.glitch.global/529a38fb-e28e-4113-a4a0-63b6e78b458a/Green%20Organic%20Warm%20Food%20and%20Restaurant%20Bio-Link%20Website%20(2).png?v=1713970513647');
+  
+}
+
+.score-board {
+  background: #63422A;
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px ;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 200px);
+  padding:20px;
+}
+.loser {
+  display: none;
+}
+.winner {
+  display: none;
+}
+.main-game {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button
+{
+  width:300px;
+  height:50px;
+  font-family: 'Patrick Hand', cursive;
+  border:3px solid black;
+  border-radius:60px;
+  background:#63422A;
+  color:#E7D3B3;
+}
+
+button.start-btn {
+width:300px;
+  height:50px;
+  font-family: 'Patrick Hand', cursive;
+  border:3px solid black;
+  border-radius:10px;
+  background:#63422A;
+}
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: relative;
+}
+.total-score {
+  background: #fff;
+  padding: 10px 100px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+h2
+{
+  width:300px;
+   margin-block:30px;
+  font-size:30px;
+  height:50px;
+  font-family: 'Patrick Hand', cursive;
+  
+}
+h4
+{
+  font-size:30px;
+  height:50px;
+  font-family: 'Patrick Hand', cursive;
+}
+p
+{
+  font-size:30px;
+  height:50px;
+  font-family: 'Patrick Hand', cursive;
+}
