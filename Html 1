@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Boba site</title>
+  </head>
+  <body>
+    <div class="password-container">
+      <h3 class="text">choclate mulfiina lover</h3>
+     
+      <input
+        class="passwordInput"
+        type="text"
+        id="passwordName"
+        placeholder="Enter your name"
+      />
+
+      <button onclick="login()">Enter</button>
+
+      <div class="button"></div>
+    </div>
+    <script>
+      function login() {
+        var passwordName = document.getElementById("passwordName").value;
+
+        // Check if the password is valid
+        if (passwordName === "iloveboba") {
+          window.location.href = "mainPage.html";
+        } else {
+          window.location.href = "error.html";
+        }
+      }
+    </script>
+  </body>
+</html>
