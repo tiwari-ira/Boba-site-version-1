@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: calc(1em + 0.5rem);
+}
+html,
+body {
+  height: 100%;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/******************************************************************************
+CSS
+******************************************************************************/
+.password-container {
+  width: 100vw;
+  height: 100vh;
+  background: #d2b48c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.passwordInput {
+  margin-block: 30px;
+  width: 300px;
+  height: 50px;
+  font-size: 23px;
+  padding-left: 20px;
+  font-family: "Patrick Hand", cursive;
+  border: 3px solid #42210b;
+  border-radius: 10px;
+  background: #e7d3b3;
+  color: #63422a;
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: 55px;
+  height: 50px;
+  font-family: "Patrick Hand", cursive;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  font-family: "Patrick Hand", cursive;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: #63422a;
+}
