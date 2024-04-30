@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boba site</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        line-height: calc(1em + 0.5rem);
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+      container {
+        width: 100vw;
+        height: 100vh;
+      }
+      .top {
+        width: 100vw;
+        height: 50vh;
+        background: #d2b48c;
+        display: table-cell;
+        vertical-align: bottom;
+       
+      }
+      .top h3
+      {
+        margin:auto;
+        width:max-content;
+        heigth:max-content;
+       margin-block:15px;
+        z-index:3;
+        
+
+      }
+      .bottom {
+        width: 100vw;
+        height: 50vh;
+        background: #d2b48c;
+        overflow: hidden;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+    .bottomImage {
+  width: 100vw;
+  height: 170vh; 
+  position: absolute;
+  bottom: 0px;
+  animation: growImage 4s linear ; 
+  transition: height 0.5s; 
+      z-index:90;
+}
+
+@keyframes growImage {
+  0% {
+    height: 20vh; /* Initial height */
+  }
+  100% {
+    height: 170vh; /* Final height */
+  }
+}
+
+      .nav {
+        height: 15vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #d2b48c;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 10000;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      li a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vh;
+        color: white;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+      }
+
+      li a:hover {
+        color: #0f9cad;
+      }
+
+      li a.active {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h3>
+          Congratulations for cracking the password! This password if for real boba lovers only!!
+        </h3>
+        <!--
+        <div class="nav">
+          <ul>
+            <li class="recipe"><a href="#Recipe">Recipe</a></li>
+            <li class="quiz"><a href="#Quiz">Quiz</a></li>
+            <li class="game"><a href="#Contact">Game</a></li>
+          </ul>
+        </div>
+-->
+      </div>
+      <div class="bottom">
+        <img
+          class="bottomImage"
+          src="https://cdn.glitch.global/529a38fb-e28e-4113-a4a0-63b6e78b458a/Green%20Organic%20Warm%20Food%20and%20Restaurant%20Bio-Link%20Website.png?v=1713965746989"
+        />
+      </div>
+    </div>
+  </body>
+</html>
